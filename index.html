@@ -19,7 +19,7 @@
         <div class="conteiner">
         <nav class="head-naw"> <a href="/index.html" class="logo">Web<span class="stud">studio</span></a>
             <ul class="siste-nav list">
-                <li class="siste-li"><a href="./index.html" class="link" >Студія</a></li>
+                <li class="siste-li"><a href="./index.html" class="siste-a link" >Студія</a></li>
                 <li class="siste-li"><a href="./portfolio.html" class="link" >Портфоліо</a></li>
                 <li class="siste-li"><a href="./index.html" class="link" >Контакти</a></li>
             </ul>
@@ -56,8 +56,21 @@
         <section class="about">
             <div class="conteiner ">
             <h1 class="titel">Ефективні рішення для вашого бізнесу</h1>
-            <button type="button" class="about-btn">Замовити послугу</button>
+            <button type="button" class="about-btn" data-modal-open>Замовити послугу</button>
+            
+            <div class="backdrop is-hidden" data-modal>
+                <div class="modal" >
+                    <button type="button" class="modal-btn" data-modal-close>
+                     <svg class="modal-svg">
+                        <use href="./img/sprite2.svg#close-black" >
+
+                        </use>
+                     </svg>
+                    </button>   
+
+                </div>
             </div>
+        </div>
         </section>
         <!-- про нас -->
         
@@ -404,7 +417,7 @@
         
     </div>
     </footer>  
-   
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
